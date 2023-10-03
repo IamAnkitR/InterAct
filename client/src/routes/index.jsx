@@ -7,15 +7,15 @@ const router = () =>
   createBrowserRouter([
     {
       path: "/",
-      element: <HomePage />,
+      element: <LoginPage />,
     },
     {
-      path: "/profile",
+      path: "/profile/:userId",
       element: <ProfilePage />,
     },
     {
-      path: "/login",
-      element: <LoginPage />,
+      path: "/home",
+      element: <HomePage />,
     },
   ]);
 
